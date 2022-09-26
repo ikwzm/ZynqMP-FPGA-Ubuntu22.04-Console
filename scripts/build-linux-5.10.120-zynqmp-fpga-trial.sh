@@ -20,13 +20,13 @@ tar xfz $KERNEL_RELEASE-$BUILD_VERSION.tar.gz
 
 ### Copy Linux Kernel Image to this repository
 
-cp "${KERNEL_SOURCE}/vmlinuz-${KERNEL_RELEASE}-${BUILD_VERSION}"      .
-cp "${KERNEL_SOURCE}/files/config-${KERNEL_RELEASE}-${BUILD_VERSION}" ./files
+cp "${KERNEL_SOURCE}/vmlinuz-${KERNEL_RELEASE}-${BUILD_VERSION}"      ./files/
+cp "${KERNEL_SOURCE}/files/config-${KERNEL_RELEASE}-${BUILD_VERSION}" ./files/
 
 ### Copy Linux Image and Header Debian Packages to this repository
 
-cp "${KERNEL_SOURCE}/linux-image-${KERNEL_RELEASE}_${KERNEL_RELEASE}-${BUILD_VERSION}_arm64.deb"   .
-cp "${KERNEL_SOURCE}/linux-headers-${KERNEL_RELEASE}_${KERNEL_RELEASE}-${BUILD_VERSION}_arm64.deb" .
+cp "${KERNEL_SOURCE}/linux-image-${KERNEL_RELEASE}_${KERNEL_RELEASE}-${BUILD_VERSION}_arm64.deb"   ./files/
+cp "${KERNEL_SOURCE}/linux-headers-${KERNEL_RELEASE}_${KERNEL_RELEASE}-${BUILD_VERSION}_arm64.deb" ./files/
 
 ### Copy devicetree for KV260
 

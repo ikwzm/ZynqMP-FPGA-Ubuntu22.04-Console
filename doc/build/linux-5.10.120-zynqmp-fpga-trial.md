@@ -11,15 +11,15 @@ shell$ cd ZynqMP-FPGA-Linux-5.10-Trial-5.10.120-zynqmp-fpga-trial-16
 ### Copy Linux Kernel Image to this repository
 
 ```console
-shell$ cp ZynqMP-FPGA-Linux-5.10-Trial-5.10.120-zynqmp-fpga-trial-16/vmlinuz-5.10.120-zynqmp-fpga-trial-16 .
+shell$ cp ZynqMP-FPGA-Linux-5.10-Trial-5.10.120-zynqmp-fpga-trial-16/vmlinuz-5.10.120-zynqmp-fpga-trial-16      ./files
 shell$ cp ZynqMP-FPGA-Linux-5.10-Trial-5.10.120-zynqmp-fpga-trial-16/files/config-5.10.120-zynqmp-fpga-trial-16 ./files
 ```
 
 ### Copy Linux Image and Header Debian Packages to this repository
 
 ```console
-shell$ cp ZynqMP-FPGA-Linux-5.10-Trial-5.10.120-zynqmp-fpga-trial-16/linux-image-5.10.120-zynqmp-fpga-trial_5.10.120-zynqmp-fpga-trial-16_arm64.deb .
-shell$ cp ZynqMP-FPGA-Linux-5.10-Trial-5.10.120-zynqmp-fpga-trial-16/linux-headers-5.10.120-zynqmp-fpga-trial_5.10.120-zynqmp-fpga-trial-16_arm64.deb .
+shell$ cp ZynqMP-FPGA-Linux-5.10-Trial-5.10.120-zynqmp-fpga-trial-16/linux-image-5.10.120-zynqmp-fpga-trial_5.10.120-zynqmp-fpga-trial-16_arm64.deb ./files/
+shell$ cp ZynqMP-FPGA-Linux-5.10-Trial-5.10.120-zynqmp-fpga-trial-16/linux-headers-5.10.120-zynqmp-fpga-trial_5.10.120-zynqmp-fpga-trial-16_arm64.deb .files/
 ```
 
 ### Copy devicetree for KV260
