@@ -7,7 +7,7 @@
 ```console
 shell$ wget https://github.com/ikwzm/ZynqMP-FPGA-Ubuntu22.04-Console/archive/refs/tags/v1.0.0.tar.gz
 shell$ tar xfz v1.0.0.tar.gz
-shell$ cd ZynqMP-FPGA-Ubuntu22.04-Console-v1.0.0
+shell$ cd ZynqMP-FPGA-Ubuntu22.04-Console-1.0.0
 ```
 
 ### File Description
