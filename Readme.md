@@ -52,15 +52,15 @@ Install
 
 ### Setup Ultra96/Ultra96-V2/KV260 borad
 
-* Put the SD-Card in the slot on Ultra96/Ultra96-V2/Kv260.
+* Put the SD-Card in the slot on Ultra96/Ultra96-V2/KV260/KR260.
 
 #### Ultra96/Ultra96-V2
 
 * Plug in a UART to PS UART1 ports of the Ultra96/Ultra96-V2.
 
-#### KV260
+#### KV260/KR260
 
-* Plug in a UART-USB Adapter to Micro USB UART/JTAG ports of the KV260.
+* Plug in a UART-USB Adapter to Micro USB UART/JTAG ports of the KV260/KR260.
 
 ### Starting Ultra96/Ultra96-V2/KV260 board
 
