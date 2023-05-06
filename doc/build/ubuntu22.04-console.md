@@ -173,6 +173,7 @@ ubuntu22.04-rootfs# apt install -y wpasupplicant
 
 ```console
 ubuntu22.04-rootfs# git clone git://git.ti.com/wilink8-wlan/wl18xx_fw.git
+ubuntu22.04-rootfs# cd wl18xx_fw && git checkout d2588c16809ecca8e0dc7ea011fc6180c7b08a92 && cd ..
 ubuntu22.04-rootfs# cp wl18xx_fw/wl18xx-fw-4.bin /lib/firmware/ti-connectivity
 ubuntu22.04-rootfs# rm -rf wl18xx_fw/
 ```
@@ -222,7 +223,6 @@ EOT
 ```console
 ubuntu22.04-rootfs# mkdir              home/fpga/debian
 ubuntu22.04-rootfs# mv *.deb           home/fpga/debian
-ubuntu22.04-rootfs# mv xorg.conf       home/fpga/debian
 ubuntu22.04-rootfs# chown fpga.fpga -R home/fpga/debian
 ```
 
