@@ -135,8 +135,8 @@ chown fpga.fpga -R /home/fpga/debian
 
 #### Install Linux Image and Header Debian Packages
 
-dpkg -i home/fpga/debian/linux-image-5.10.120-zynqmp-fpga-trial_5.10.120-zynqmp-fpga-trial-16_arm64.deb
-dpkg -i home/fpga/debian/linux-headers-5.10.120-zynqmp-fpga-trial_5.10.120-zynqmp-fpga-trial-16_arm64.deb
+dpkg -i home/fpga/debian/linux-image-5.15.108-zynqmp-fpga-trial_5.15.108-zynqmp-fpga-trial-2_arm64.deb
+dpkg -i home/fpga/debian/linux-headers-5.15.108-zynqmp-fpga-trial_5.15.108-zynqmp-fpga-trial-2_arm64.deb
 
 #### Clean Cache
 

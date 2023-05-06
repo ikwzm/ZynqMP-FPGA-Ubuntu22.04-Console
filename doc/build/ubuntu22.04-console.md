@@ -18,7 +18,7 @@ shell$ sudo debootstrap --arch=arm64 --foreign $distro     $PWD/$targetdir
 shell$ sudo cp /usr/bin/qemu-aarch64-static                $PWD/$targetdir/usr/bin
 shell$ sudo cp /etc/resolv.conf                            $PWD/$targetdir/etc
 shell$ sudo cp scripts/build-ubuntu22.04-console-rootfs.sh $PWD/$targetdir
-shell$ sudo cp files/*.deb                                 $PWD/$targetdir
+shell$ sudo cp debian/*.deb                                $PWD/$targetdir
 shell$ sudo mount -vt proc proc                            $PWD/$targetdir/proc
 shell$ sudo mount -vt devpts devpts -o gid=5,mode=620      $PWD/$targetdir/dev/pts
 ````
@@ -229,8 +229,8 @@ ubuntu22.04-rootfs# chown fpga.fpga -R home/fpga/debian
 #### Install Linux Image Debian Packages
 
 ```console
-ubuntu22.04-rootfs# dpkg -i home/fpga/debian/linux-image-5.10.120-zynqmp-fpga-trial_5.10.120-zynqmp-fpga-trial-16_arm64.deb
-ubuntu22.04-rootfs# dpkg -i home/fpga/debian/linux-headers-5.10.120-zynqmp-fpga-trial_5.10.120-zynqmp-fpga-trial-16_arm64.deb
+ubuntu22.04-rootfs# dpkg -i home/fpga/debian/linux-image-5.15.108-zynqmp-fpga-trial_5.15.108-zynqmp-fpga-trial-2_arm64.deb
+ubuntu22.04-rootfs# dpkg -i home/fpga/debian/linux-headers-5.15.108-zynqmp-fpga-trial_5.15.108-zynqmp-fpga-trial-2_arm64.deb
 ```
 
 #### Clean Cache
