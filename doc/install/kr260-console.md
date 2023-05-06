@@ -1,4 +1,4 @@
-## Install Ubuntu 22.04(Console) to Kv260
+## Install Ubuntu 22.04(Console) to Kr260
 
 ### Downlowd from github
 
@@ -12,12 +12,12 @@ shell$ cd ZynqMP-FPGA-Ubuntu22.04-Console-1.1.0
 
 ### File Description
 
- * target/Kv260/
+ * target/Kr260/
    + boot/
      - boot.scr                                                    : Stage Script file
      - uEnv.txt                                                    : U-Boot environment variables for linux boot
-     - devicetree-5.15.108-zynqmp-fpga-trial-kv260-revB.dtb        : Linux Device Tree Blob
-     - devicetree-5.15.108-zynqmp-fpga-trial-kv260-revB.dts        : Linux Device Tree Source
+     - devicetree-5.15.108-zynqmp-fpga-trial-kr260-revB.dtb        : Linux Device Tree Blob
+     - devicetree-5.15.108-zynqmp-fpga-trial-kr260-revB.dts        : Linux Device Tree Source
  * files/
    + vmlinuz-5.15.108-zynqmp-fpga-trial-2                          : Linux Kernel Image
  * ubuntu22.04-console-rootfs.tgz.files/                           : Ubuntu 22.04 Console Root File System
@@ -53,7 +53,7 @@ shell# (cat ubuntu22.04-console-rootfs.tgz.files/*) | tar xfz - -C /mnt/usb2
 ```console
 shell# mkdir /mnt/usb2/mnt/boot
 shell# cat <<EOT >> /mnt/usb2/etc/fstab
-/dev/mmcblk1p1	/mnt/boot	auto	defaults	0	0
+/dev/sda1	/mnt/boot	auto	defaults	0	0
 EOT
 ```
 
