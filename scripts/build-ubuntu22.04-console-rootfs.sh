@@ -95,6 +95,7 @@ apt install -y wpasupplicant
 #apt install -y firmware-ralink
 
 git clone git://git.ti.com/wilink8-wlan/wl18xx_fw.git
+cd wl18xx_fw && git checkout d2588c16809ecca8e0dc7ea011fc6180c7b08a92 && cd ..
 cp wl18xx_fw/wl18xx-fw-4.bin /lib/firmware/ti-connectivity
 rm -rf wl18xx_fw/
 
@@ -130,13 +131,12 @@ EOT
 
 mkdir /home/fpga/debian
 mv *.deb     /home/fpga/debian
-mv xorg.conf /home/fpga/debian
 chown fpga.fpga -R /home/fpga/debian
 
 #### Install Linux Image and Header Debian Packages
 
-dpkg -i home/fpga/debian/linux-image-5.10.120-zynqmp-fpga-trial_5.10.120-zynqmp-fpga-trial-16_arm64.deb
-dpkg -i home/fpga/debian/linux-headers-5.10.120-zynqmp-fpga-trial_5.10.120-zynqmp-fpga-trial-16_arm64.deb
+dpkg -i home/fpga/debian/linux-image-5.15.108-zynqmp-fpga-trial_5.15.108-zynqmp-fpga-trial-2_arm64.deb
+dpkg -i home/fpga/debian/linux-headers-5.15.108-zynqmp-fpga-trial_5.15.108-zynqmp-fpga-trial-2_arm64.deb
 
 #### Clean Cache
 

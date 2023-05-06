@@ -14,20 +14,22 @@ This Repository provides a Ubuntu22.04-Console(CUI Only) for Zynq MPSoC.
 
 **I modified it to my liking. Please handle with care.**
 
+
 ### Features
 
 * Hardware
   + Ultra96    : Xilinx Zynq UltraScale+ MPSoC development board based on the Linaro 96Boards specification. 
   + Ultra96-V2 : updates and refreshes the Ultra96 product that was released in 2018.
   + KV260      : Kria KV260 Vision AI Startar Kit.
+  + KR260      : Kria KR260 Robotics  Startar Kit.
 * Boot Loader
   + FSBL(First Stage Boot Loader for ZynqMP)
   + PMU Firmware(Platform Management Unit Firmware)
   + BL31(ARM Trusted Firmware Boot Loader stage 3-1)
   + U-Boot xilinx-v2019.2 (customized)
-* Linux Kernel Version 5.10.120-zynqmp-fpga-trial
-  + [linux-stable 5.10.120](https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git//tag/?h=v5.10.120)
-  + Patched equivalent to linux-xlnx v2021.2
+* [Linux Kernel Version 5.15.108-zynqmp-fpga-trial](https://github.com/ikwzm/ZynqMP-FPGA-Linux-Kernel-5.15/tree/5.15.108-zynqmp-fpga-trial-2)
+  + [linux-stable 5.15.108](https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git//tag/?h=v5.15.108)
+  + Patched equivalent to linux-xlnx v2022.2
   + Enable Device Tree Overlay with Configuration File System
   + Enable FPGA Manager
   + Enable FPGA Bridge
@@ -46,6 +48,7 @@ Install
 * [Ultra96](doc/install/ultra96-console.md)
 * [Ultra96-V2](doc/install/ultra96v2-console.md)
 * [KV260](doc/install/kv260-console.md)
+* [KR260](doc/install/kr260-console.md)
 
 ### Setup Ultra96/Ultra96-V2/KV260 borad
 
@@ -78,5 +81,5 @@ Build
 * Build Boot Loader
   + [Ultra96](doc/build/ultra96-boot.md)
   + [Ultra96-V2](doc/build/ultra96v2-boot.md)
-* [Build Linux Kernel 5.10.120-zynqmp-fpga-trial](doc/build/linux-5.10.120-zynqmp-fpga-trial.md)
+* [Build Linux Kernel 5.15.108-zynqmp-fpga-trial](doc/build/linux-5.15.108-zynqmp-fpga-trial.md)
 * [Build Ubuntu 22.04 Console RootFS](doc/build/ubuntu22.04-console.md)
