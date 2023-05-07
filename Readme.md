@@ -35,7 +35,14 @@ This Repository provides a Ubuntu22.04-Console(CUI Only) for Zynq MPSoC.
   + Enable FPGA Bridge
   + Enable FPGA Reagion
   + Enable ATWILC3000 Linux Driver for Ultra96-V2
-* Ubuntu22.04(jammy) Console(CUI Only) Root File System
+  + Enable Lima(Open Source Mali-400 Device Driver)
+    - Patch to lima for multiple clocks
+    - Patch to lima for multiple interrupt names
+    - Patch to lima for alternative device tree ID
+    - Patch to xlnx_drm for default alignment size
+    - Patch to xlnx_drm for enable data cache
+  + Other config -> [files/config-5.15.108-zynqmp-fpga-trial-2](files/config-5.15.108-zynqmp-fpga-trial-2)
+* Ubuntu22.04.2(jammy) Console(CUI Only) Root File System
   + Installed build-essential
   + Installed ruby python python3
   + Installed Other package list -> [files/ubuntu22.04-console-dpkg-list.txt](files/ubuntu22.04-console-dpkg-list.txt)
