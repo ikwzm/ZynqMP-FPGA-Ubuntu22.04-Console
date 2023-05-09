@@ -47,6 +47,14 @@ This Repository provides a Ubuntu22.04-Console(CUI Only) for Zynq MPSoC.
   + Installed ruby python python3
   + Installed Other package list -> [files/ubuntu22.04-console-dpkg-list.txt](files/ubuntu22.04-console-dpkg-list.txt)
 
+Release
+------------------------------------------------------------------------------------
+
+| Release  | Released  | Ubuntu Version | Linux Kernel Version           | Release Tag |
+|:---------|:----------|:---------------|:-------------------------------|:------------|
+| v1.1.2   | 2023-5-10 | Ubuntu 22.04.2 | 5.15.108-zynqmp-fpga-trial-2   | [v1.1.2](https://github.com/ikwzm/ZynqMP-FPGA-Ubuntu22.04-Console/tree/v1.1.2)
+| v1.0.0   | 2022-9-30 | Ubuntu 22.04.1 | 5.10.120-zynqmp-fpga-trial-16  | [v1.0.0](https://github.com/ikwzm/ZynqMP-FPGA-Ubuntu22.04-Console/tree/v1.0.0)
+
 Install
 ------------------------------------------------------------------------------------
 
@@ -86,7 +94,7 @@ Build
 ------------------------------------------------------------------------------------
 
 * Build Boot Loader
-  + [Ultra96](doc/build/ultra96-boot.md)
-  + [Ultra96-V2](doc/build/ultra96v2-boot.md)
+  + [Ultra96](doc/build/boot-ultra96.md)
+  + [Ultra96-V2](doc/build/boot-ultra96v2.md)
 * [Build Linux Kernel 5.15.108-zynqmp-fpga-trial](doc/build/linux-5.15.108-zynqmp-fpga-trial.md)
 * [Build Ubuntu 22.04 Console RootFS](doc/build/ubuntu22.04-console.md)
