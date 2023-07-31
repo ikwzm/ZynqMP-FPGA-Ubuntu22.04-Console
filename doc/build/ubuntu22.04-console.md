@@ -73,7 +73,7 @@ ubuntu22.04-rootfs# dpkg-reconfigure locales
 ubuntu22.04-rootfs# apt install -y net-tools openssh-server ntpdate resolvconf sudo less hwinfo ntp tcsh zsh file
 ```
 
-Here, the locales setting is "C.UTF-8".
+Here, please select "160. en_US.UTF-8 UTF-8" and "2. C.UTF-8"
 Set a different locales if necessary.
 
 #### Setup hostname
@@ -229,8 +229,8 @@ ubuntu22.04-rootfs# chown fpga.fpga -R home/fpga/debian
 #### Install Linux Image Debian Packages
 
 ```console
-ubuntu22.04-rootfs# dpkg -i home/fpga/debian/linux-image-5.15.108-zynqmp-fpga-trial_5.15.108-zynqmp-fpga-trial-2_arm64.deb
-ubuntu22.04-rootfs# dpkg -i home/fpga/debian/linux-headers-5.15.108-zynqmp-fpga-trial_5.15.108-zynqmp-fpga-trial-2_arm64.deb
+ubuntu22.04-rootfs# dpkg -i home/fpga/debian/linux-image-6.1.42-zynqmp-fpga-trial_6.1.42-zynqmp-fpga-trial-1_arm64.deb
+ubuntu22.04-rootfs# dpkg -i home/fpga/debian/linux-headers-6.1.42-zynqmp-fpga-trial_6.1.42-zynqmp-fpga-trial-1_arm64.deb
 ```
 
 #### Clean Cache

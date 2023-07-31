@@ -1,10 +1,10 @@
-## Build Linux 5.15.108-zynqmp-fpga-trial
+## Build Linux 6.1.42-zynqmp-fpga-trial
 
 CURRENT_DIR=`pwd`
-KERNEL_REPO=ZynqMP-FPGA-Linux-Kernel-5.15
-KERNEL_VERSION=5.15.108
+KERNEL_REPO=ZynqMP-FPGA-Linux-Kernel-6.1
+KERNEL_VERSION=6.1.42
 LOCAL_VERSION=zynqmp-fpga-trial
-BUILD_VERSION=2
+BUILD_VERSION=1
 KERNEL_RELEASE=$KERNEL_VERSION-$LOCAL_VERSION
 KERNEL_SOURCE=$KERNEL_REPO-$KERNEL_RELEASE-$BUILD_VERSION
 
@@ -30,16 +30,16 @@ cp "${KERNEL_SOURCE}/linux-headers-${KERNEL_RELEASE}_${KERNEL_RELEASE}-${BUILD_V
 
 ### Copy devicetree for KV260
 
-sh "${KERNEL_SOURCE}/scripts/install-linux-${KERNEL_RELEASE}.sh" Kv260 -T -d target/Kv260/boot -v
+eval "${KERNEL_SOURCE}/scripts/install-linux-${KERNEL_RELEASE}.sh Kv260 -T -U -d target/Kv260/boot -v"
 
 ### Copy devicetree for KR260
 
-sh "${KERNEL_SOURCE}/scripts/install-linux-${KERNEL_RELEASE}.sh" Kr260 -T -d target/Kr260/boot -v
+eval "${KERNEL_SOURCE}/scripts/install-linux-${KERNEL_RELEASE}.sh Kr260 -T -U -d target/Kr260/boot -v"
 
 ### Copy devicetree for Ultra96
 
-sh "${KERNEL_SOURCE}/scripts/install-linux-${KERNEL_RELEASE}.sh" Ultra96 -T -d target/Ultra96/boot -v
+eval "${KERNEL_SOURCE}/scripts/install-linux-${KERNEL_RELEASE}.sh Ultra96 -T -U -d target/Ultra96/boot -v"
 
 ### Copy devicetree for Ultra96-V2
 
-sh "${KERNEL_SOURCE}/scripts/install-linux-${KERNEL_RELEASE}.sh" Ultra96-V2 -T -d target/Ultra96-V2/boot -v
+eval "${KERNEL_SOURCE}/scripts/install-linux-${KERNEL_RELEASE}.sh Ultra96-V2 -T -U -d target/Ultra96-V2/boot -v"
