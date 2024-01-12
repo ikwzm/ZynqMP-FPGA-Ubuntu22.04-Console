@@ -5,9 +5,9 @@
 **Note: Downloading the entire repository is time consuming, so download only the branch you need.**
 
 ```console
-shell$ wget https://github.com/ikwzm/ZynqMP-FPGA-Ubuntu22.04-Console/archive/refs/tags/v3.0.0.tar.gz
-shell$ tar xfz v3.0.0.tar.gz
-shell$ cd ZynqMP-FPGA-Ubuntu22.04-Console-3.0.0
+shell$ wget https://github.com/ikwzm/ZynqMP-FPGA-Ubuntu22.04-Console/archive/refs/tags/v3.0.1.tar.gz
+shell$ tar xfz v3.0.1.tar.gz
+shell$ cd ZynqMP-FPGA-Ubuntu22.04-Console-3.0.1
 ```
 
 ### File Description
