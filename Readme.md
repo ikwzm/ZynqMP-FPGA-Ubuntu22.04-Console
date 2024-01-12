@@ -27,8 +27,8 @@ This Repository provides a Ubuntu22.04-Console(CUI Only) for Zynq MPSoC.
   + PMU Firmware(Platform Management Unit Firmware)
   + BL31(ARM Trusted Firmware Boot Loader stage 3-1)
   + U-Boot xilinx-v2019.2 (customized)
-* [Linux Kernel Version 6.1.42-zynqmp-fpga-trial](https://github.com/ikwzm/ZynqMP-FPGA-Linux-Kernel-6.1/tree/6.1.42-zynqmp-fpga-trial-1)
-  + [linux-stable 6.1.42](https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git//tag/?h=v6.1.42)
+* [Linux Kernel Version 6.1.70-zynqmp-fpga-trial](https://github.com/ikwzm/ZynqMP-FPGA-Linux-Kernel-6.1/tree/6.1.70-zynqmp-fpga-trial-2)
+  + [linux-stable 6.1.70](https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git//tag/?h=v6.1.70)
   + Patched equivalent to linux-xlnx v2022.2
   + Enable Device Tree Overlay with Configuration File System
   + Enable FPGA Manager
@@ -41,8 +41,8 @@ This Repository provides a Ubuntu22.04-Console(CUI Only) for Zynq MPSoC.
     - Patch to lima for alternative device tree ID
     - Patch to xlnx_drm for default alignment size
     - Patch to xlnx_drm for enable data cache
-  + Other config -> [files/config-6.1.42-zynqmp-fpga-trial-1](files/config-6.1.42-zynqmp-fpga-trial-1)
-* Ubuntu22.04.2(jammy) Console(CUI Only) Root File System
+  + Other config -> [files/config-6.1.70-zynqmp-fpga-trial-2](files/config-6.1.70-zynqmp-fpga-trial-2)
+* Ubuntu22.04.x(jammy) Console(CUI Only) Root File System
   + Installed build-essential
   + Installed ruby python python3
   + Installed Other package list -> [files/ubuntu22.04-console-dpkg-list.txt](files/ubuntu22.04-console-dpkg-list.txt)
@@ -52,6 +52,7 @@ Release
 
 | Release  | Released  | Ubuntu Version | Linux Kernel Version           | Release Tag |
 |:---------|:----------|:---------------|:-------------------------------|:------------|
+| v3.0.0   | 2024-1-12 | Ubuntu 22.04.3 | 6.1.70-zynqmp-fpga-trial-2     | [v3.0.0](https://github.com/ikwzm/ZynqMP-FPGA-Ubuntu22.04-Console/tree/v3.0.0)
 | v1.2.0   | 2023-7-31 | Ubuntu 22.04.2 | 6.1.42-zynqmp-fpga-trial-1     | [v1.2.0](https://github.com/ikwzm/ZynqMP-FPGA-Ubuntu22.04-Console/tree/v1.2.0)
 | v1.1.2   | 2023-5-10 | Ubuntu 22.04.2 | 5.15.108-zynqmp-fpga-trial-2   | [v1.1.2](https://github.com/ikwzm/ZynqMP-FPGA-Ubuntu22.04-Console/tree/v1.1.2)
 | v1.0.0   | 2022-9-30 | Ubuntu 22.04.1 | 5.10.120-zynqmp-fpga-trial-16  | [v1.0.0](https://github.com/ikwzm/ZynqMP-FPGA-Ubuntu22.04-Console/tree/v1.0.0)
@@ -97,5 +98,5 @@ Build
 * Build Boot Loader
   + [Ultra96](doc/build/boot-ultra96.md)
   + [Ultra96-V2](doc/build/boot-ultra96v2.md)
-* [Build Linux Kernel 6.1.42-zynqmp-fpga-trial](doc/build/linux-6.1.42-zynqmp-fpga-trial.md)
+* [Build Linux Kernel 6.1.70-zynqmp-fpga-trial](doc/build/linux-6.1.70-zynqmp-fpga-trial.md)
 * [Build Ubuntu 22.04 Console RootFS](doc/build/ubuntu22.04-console.md)
