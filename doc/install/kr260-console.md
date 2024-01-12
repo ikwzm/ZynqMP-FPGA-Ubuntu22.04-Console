@@ -38,7 +38,7 @@ shell# mount /dev/sdc2 /mnt/usb2
 #### Make Boot Partition
 
 ```console
-shell# cp target/Kv260/boot/* /mnt/usb1
+shell# cp target/Kr260/boot/* /mnt/usb1
 shell# gzip -d -c files/vmlinuz-6.1.70-zynqmp-fpga-trial-2 > /mnt/usb1/image-6.1.70-zynqmp-fpga-trial
 ```
 
