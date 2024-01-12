@@ -229,8 +229,8 @@ ubuntu22.04-rootfs# chown fpga.fpga -R home/fpga/debian
 #### Install Linux Image Debian Packages
 
 ```console
-ubuntu22.04-rootfs# dpkg -i home/fpga/debian/linux-image-6.1.42-zynqmp-fpga-trial_6.1.42-zynqmp-fpga-trial-1_arm64.deb
-ubuntu22.04-rootfs# dpkg -i home/fpga/debian/linux-headers-6.1.42-zynqmp-fpga-trial_6.1.42-zynqmp-fpga-trial-1_arm64.deb
+ubuntu22.04-rootfs# dpkg -i home/fpga/debian/linux-image-6.1.70-zynqmp-fpga-trial_6.1.70-zynqmp-fpga-trial-2_arm64.deb
+ubuntu22.04-rootfs# dpkg -i home/fpga/debian/linux-headers-6.1.70-zynqmp-fpga-trial_6.1.70-zynqmp-fpga-trial-2_arm64.deb
 ```
 
 #### Clean Cache
