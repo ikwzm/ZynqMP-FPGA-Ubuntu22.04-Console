@@ -5,9 +5,9 @@
 **Note: Downloading the entire repository is time consuming, so download only the branch you need.**
 
 ```console
-shell$ wget https://github.com/ikwzm/ZynqMP-FPGA-Ubuntu22.04-Console/archive/refs/tags/v3.0.0.tar.gz
-shell$ tar xfz v3.0.0.tar.gz
-shell$ cd ZynqMP-FPGA-Ubuntu22.04-Console-3.0.0
+shell$ wget https://github.com/ikwzm/ZynqMP-FPGA-Ubuntu22.04-Console/archive/refs/tags/v3.0.1.tar.gz
+shell$ tar xfz v3.0.1.tar.gz
+shell$ cd ZynqMP-FPGA-Ubuntu22.04-Console-3.0.1
 ```
 
 ### File Description
@@ -38,7 +38,7 @@ shell# mount /dev/sdc2 /mnt/usb2
 #### Make Boot Partition
 
 ```console
-shell# cp target/Kv260/boot/* /mnt/usb1
+shell# cp target/Kr260/boot/* /mnt/usb1
 shell# gzip -d -c files/vmlinuz-6.1.70-zynqmp-fpga-trial-2 > /mnt/usb1/image-6.1.70-zynqmp-fpga-trial
 ```
 
